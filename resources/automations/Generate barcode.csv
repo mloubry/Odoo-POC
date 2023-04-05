@@ -1,0 +1,2 @@
+"id","name","model_id","sequence","trigger","state","type","active","binding_type","action_server_id","usage"
+"__export__.base_automation_7_839b5664","Generate Barcode","Product","5","On Creation & Update","code","ir.actions.server","True","action","Generate Barcode","base_automation"

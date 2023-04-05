@@ -1,0 +1,2 @@
+"id","name","model_id","sequence","trigger","state","type","active","binding_type","action_server_id","usage"
+"studio_customization.create_opportunity_a81b8116-b071-42df-96df-e6a3d86edd4f","Create Opportunity","Sales Order","5","On Update","object_create","ir.actions.server","True","action","Create Opportunity","base_automation"
