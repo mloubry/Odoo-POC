@@ -128,3 +128,4 @@ class TestSaleOrder(TransactionCase):
         # Check if opportunity is created with a medium priority 
         opportunity = self.env['crm.lead'].search([('name', '=', f'Cancelled quote: {sale_order.name}')], order='id desc', limit=1)
         self.assertEqual(opportunity.priority, '1', "Opportunity priority is not 2")
+        
