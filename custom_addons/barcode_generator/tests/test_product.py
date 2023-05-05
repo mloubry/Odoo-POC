@@ -19,3 +19,8 @@ class TestProductTemplate(TransactionCase):
         # Check if barcode is generated automatically on write
         self.product.write({'name': 'Updated Test Product'})
         self.assertTrue(self.product.barcode, "Barcode not generated on write")
+
+    def test_barcode_format(self):
+        # Check if barcode starts with 'PROD' and has a total length of 17 characters
+        self.assertTrue(self.product.barcode.startswith('PROD'), "Barcode does not start with 'PROD'")
+        self.assertEqual(len(self.product.barcode), 17, "Barcode does not have a total length of 17 characters")
